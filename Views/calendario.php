@@ -1,9 +1,12 @@
 <?php
 	if (!empty($_GET['ano'])) {
-		$data = $_GET['ano'].'-'.$_GET['mes'];	
+		$data = $_GET['ano'].'-'.$_GET['mes'];
+		$m = $_GET['mes'];	
 	} else{
 		$data = date("Y-m");
+		$m = date("m");
 	};
+	
 	$dia1 = date('w', strtotime($data));
 	$dias = date('t', strtotime($data));
 	$linhas = ceil(($dia1+$dias) / 7);
@@ -13,22 +16,22 @@
 ?>
 <form method="GET">
 	<select name="mes">
-		<option>01</option>
-		<option>02</option>
-		<option>03</option>
-		<option>04</option>
-		<option>05</option>
-		<option>06</option>
-		<option>07</option>
-		<option>08</option>
-		<option>09</option>
-		<option>10</option>
-		<option>11</option>
-		<option>12</option>
+		<option <?php echo ($m == "01")?'selected="selected"':''; ?>>01</option>
+		<option <?php echo ($m == "02")?'selected="selected"':''; ?>>02</option>
+		<option <?php echo ($m == "03")?'selected="selected"':''; ?>>03</option>
+		<option <?php echo ($m == "04")?'selected="selected"':''; ?>>04</option>
+		<option <?php echo ($m == "05")?'selected="selected"':''; ?>>05</option>
+		<option <?php echo ($m == "06")?'selected="selected"':''; ?>>06</option>
+		<option <?php echo ($m == "07")?'selected="selected"':''; ?>>07</option>
+		<option <?php echo ($m == "08")?'selected="selected"':''; ?>>08</option>
+		<option <?php echo ($m == "09")?'selected="selected"':''; ?>>09</option>
+		<option <?php echo ($m == "10")?'selected="selected"':''; ?>>10</option>
+		<option <?php echo ($m == "11")?'selected="selected"':''; ?>>11</option>
+		<option <?php echo ($m == "12")?'selected="selected"':''; ?>>12</option>
 	</select>
 	<select name="ano">
 		<?php for($q=date('Y');$q>=2000;$q--): ?>
-		<option><?php echo $q; ?></option>
+		<option ><?php echo $q; ?></option>
 		<?php endfor; ?>
 	</select>
 	<input type="submit" value="Mostrar" />
