@@ -1,5 +1,4 @@
 <?php 
-/* INSERT INTO `pessoas` (`id`, `nome`, `tipo`, `telefone`, `endereco`, `observacao`) VALUES (NULL, 'Evandro Henrique Risso', 'AMBOS', '91-980916249', 'Alm Dom Pedro I, 07, entrada pela travessa dos andradas', 'gosta da marmita sem arroz, feijao e macarrão'); */
 	class contas extends Model{
 		
 		public function mostrar($id){
