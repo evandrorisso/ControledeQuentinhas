@@ -35,15 +35,15 @@
 			$ultimoid = "select max(id) as a from usuarios";
 			$ultimoid = $this->db->query($ultimoid);
 			$ultimoid = $ultimoid->fetch();
+			/* Cria as Tabelas no banco de dados */
 			$pessoa = new criarTabelas();
 			$criarTabela = $pessoa->tabelaPessoa($ultimoid['a']);
 			$criarTabela = $pessoa->tabelaContas($ultimoid['a']);
+			/* Atualiza coloca os dados de controle */
 			$sql = "UPDATE usuarios set controle = md5(".$ultimoid['a'].") where id=".$ultimoid['a'].";";
 			$sql .= "INSERT configurar set idusuario = ".$ultimoid['a'].";";
 			$sql = $this->db->query($sql);
-			/*
-			$pessoa = new criarTabelas();
-			$criarTabela = $pessoa->tabelaPessoa($ultimoid['a']);*/
+			
 		}
 
 	}

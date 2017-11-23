@@ -25,7 +25,8 @@
 				$configurar = new configurar();
 				$dados['configurar'] = $configurar->getconfigurar($dados['usuario']['id']);
 				/* Envia para Visualização */
-				$this->loadTemplate('dashboard',$dados);
+				header('LOCATION: '.BASE_URL.'Home/sistema');
+				exit;
 			}else{
 				$this->loadView('cadastrar',$dados = array()); 		
 			}
