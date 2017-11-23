@@ -19,8 +19,6 @@
 				$cadastro = $cadastro->cadastrar($cadastros);
 				$usuario = new usuario();
 				$dados['usuario'] = $usuario->getUsuarioEmail($cadastros['email']);
-				$pessoa = new criarTabelas();
-				$criarTabela = $pessoa->tabelaPessoa($dados['usuario']['id']);
 				$sessao = new HomeController();
 				$sessao->grava_sessao($dados['usuario']['controle']);
 				/* Pega os dados da tabela configurar*/
