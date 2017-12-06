@@ -17,7 +17,7 @@
 		                            		<td class="center"><?php echo $key['id']; ?></td>
 		                            		<td class="center"><?php echo $key['nome']; ?></td>
 		                            		<td class="center"><?php echo $key['tipo']; ?></td>
-		                            		<td class="center"><?php echo $key['telefone']; ?></td>
+		                            		<td id="telefone" class="center"><?php echo $key['telefone']; ?></td>
 		                            		<td class="center">
 		        	                   			<a class="green" href="<?php echo BASE_URL."Pessoas/Editar/".$key['id'];  ?>">
 													<i class="ace-icon fa fa-pencil bigger-130"></i>

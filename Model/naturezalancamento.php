@@ -12,6 +12,24 @@
 				}
 			}
 		}
+
+		public function mostrarTipo($id,$t){
+			$usuario = $id;
+			if ($t == 'RECEITA') {
+				$i = '1.000';
+			} else{
+				$i = '2.000';
+			}
+			$sql = "SELECT * FROM naturezaLancamento".$usuario." where tipo = '$t' and classificacao <> '$i' order by tipo,classificacao";
+			$sql = $this->db->query($sql);
+			if (!empty($sql)){
+				if ($sql->rowCount() > 0){
+					$sql = $sql->fetchALL();
+					return $sql;
+				}
+			}
+		}
+
 		public function ultimoid($id){
 			$usuario = $id['usuario']['id'];
 			$sql = "SELECT max(id)+1 as id FROM naturezaLancamento".$usuario;

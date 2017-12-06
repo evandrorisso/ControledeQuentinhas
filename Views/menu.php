@@ -359,7 +359,7 @@
                                 <b class="arrow"></b>
                                 <ul class="submenu">
                                             <li class="">
-                                                <a href="<?php echo BASE_URL; ?>Contas/Cadastrar">
+                                                <a href="<?php echo BASE_URL; ?>ContasPagar/Cadastrar">
                                                     <i class="menu-icon fa fa-plus purple"></i>
                                                     Adicionar Conta Pagar
                                                 </a>
@@ -368,7 +368,7 @@
                                             </li>
 
                                             <li class="">
-                                                <a href="<?php echo BASE_URL; ?>Contas">
+                                                <a href="<?php echo BASE_URL; ?>ContasPagar">
                                                     <i class="menu-icon fa fa-eye pink"></i>
                                                     Listar Contas Pagar
                                                 </a>
@@ -387,7 +387,7 @@
                                 <b class="arrow"></b>
                                 <ul class="submenu">
                                             <li class="">
-                                                <a href="<?php echo BASE_URL; ?>Contas/Cadastrar">
+                                                <a href="<?php echo BASE_URL; ?>ContasReceber/Cadastrar">
                                                     <i class="menu-icon fa fa-plus purple"></i>
                                                     Adicionar Conta Receber
                                                 </a>
@@ -396,7 +396,7 @@
                                             </li>
 
                                             <li class="">
-                                                <a href="<?php echo BASE_URL; ?>Contas">
+                                                <a href="<?php echo BASE_URL; ?>ContasReceber">
                                                     <i class="menu-icon fa fa-eye pink"></i>
                                                     Listar Contas Receber
                                                 </a>
