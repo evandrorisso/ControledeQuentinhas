@@ -38,13 +38,13 @@
     <div class="form-group">
         <label class="col-sm-3 control-label no-padding-right" for="form-field-1">Preço de Custo:</label>
         <div class="col-sm-9">
-            <input class="form-control" type="text" name="valorcusto" placeholder="Preço de Custo do Produto" value="<?php echo str_replace(".", ",",$viewData['produtos']['valorcusto']); ?>" requerid>
+            <input class="form-control" type="text" name="valorcusto" id="valorcusto" placeholder="Preço de Custo do Produto" value="<?php echo str_replace(".", ",",$viewData['produtos']['valorcusto']); ?>" requerid>
         </div>
     </div>
     <div class="form-group">
         <label class="col-sm-3 control-label no-padding-right" for="form-field-1">Preço de Venda:</label>
         <div class="col-sm-9">
-            <input class="form-control" type="text" name="valorvenda" placeholder="Preço de Venda do Produto" value="<?php echo str_replace(".", ",",$viewData['produtos']['valorvenda']); ?>" requerid>
+            <input class="form-control" type="text" name="valorvenda" id="valorvenda" placeholder="Preço de Venda do Produto" value="<?php echo str_replace(".", ",",$viewData['produtos']['valorvenda']); ?>" requerid>
         </div>
     </div>
     <div class="row" align="right">

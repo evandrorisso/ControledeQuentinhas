@@ -6,7 +6,7 @@
         <label class="col-sm-3 control-label no-padding-right" for="form-field-1">Dt. Emissão:</label>
         <div class="col-sm-3">
           <div class="input-group">
-            <input class="form-control input-mask-date" type="text" name="dtemissao" id="form-field-mask-1" value="<?php echo date('d/m/Y',strtotime($viewData['contasPagar']['dt_emissao'])); ?>" requerid>
+            <input class="form-control input-mask-date" type="text" data-mask="00/00/0000" name="dtemissao" id="form-field-mask-1" value="<?php echo date('d/m/Y',strtotime($viewData['contasPagar']['dt_emissao'])); ?>" requerid>
             <span class="input-group-addon">
               <i class="fa fa-calendar bigger-110"></i>
             </span>
@@ -15,7 +15,7 @@
         <label class="col-sm-3 control-label no-padding-right" for="form-field-1">Dt. Vencimento:</label>
         <div class="col-sm-3">
           <div class="input-group">
-            <input class="form-control" type="text" name="dtvenc" value="<?php echo date('d/m/Y',strtotime($viewData['contasPagar']['dt_venc'])); ?>" requerid>
+            <input class="form-control" type="text" name="dtvenc" data-mask="00/00/0000" value="<?php echo date('d/m/Y',strtotime($viewData['contasPagar']['dt_venc'])); ?>" requerid>
             <span class="input-group-addon">
               <i class="fa fa-calendar bigger-110"></i>
             </span>

@@ -32,9 +32,9 @@
         </div>
     </div>	
 	<div class="form-group">
-       	<label class="col-sm-3 control-label no-padding-right" for="form-field-1">Telefone:</label>
+       	<label class="col-sm-3 control-label no-padding-right"  for="form-field-1">Telefone:</label>
        	<div class="col-sm-9">
-           	<input class="form-control" type="text" name="telefone" placeholder="Telefones da Pessoa" value="<?php echo $viewData['Pessoas']['telefone']; ?>">
+           	<input class="form-control" type="text" name="telefone" data-mask="(00) 0000-0000" placeholder="Telefones da Pessoa" value="<?php echo $viewData['Pessoas']['telefone']; ?>">
         </div>
     </div>
     <div class="form-group">
